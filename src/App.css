@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f6f8;
+  background-image: url('/public/takeout.png'); /* Ensure the correct path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  min-height: 100vh; /* Ensure the body takes up the full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.MuiPaper-root {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  color: #333 !important;
+  border-radius: 12px !important;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1) !important;
+  padding: 40px !important;
+  width: 100%;
+  max-width: 1200px; /* Limit max width for readability */
+  margin: 20px;
+  overflow-x: auto; /* Ensure horizontal overflow is handled */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.MuiTableContainer-root {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.MuiTable-root {
+  width: 100%; /* Ensure the table takes up the full width of its container */
+  max-width: 100%;
+}
+
+.MuiTableCell-root {
+  border-bottom: 1px solid #ddd !important;
+  color: #333 !important;
+  padding: 14px;
+}
+
+.MuiTableHead-root {
+  background-color: #f8f9fa !important;
+  color: #333 !important;
+}
+
+.MuiTableRow-root:hover {
+  background-color: #f1f1f1 !important;
+}
+
+h4, h6 {
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+input[type="text"], .MuiTextField-root {
+  background-color: #ffffff !important;
+  border: 1px solid #ccc !important;
+  color: #333 !important;
+  padding: 12px !important;
+  border-radius: 8px !important;
+}
+
+input[type="text"]:focus, .MuiTextField-root:focus {
+  border-color: #007bff !important;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
